@@ -21,9 +21,9 @@ class Triangle
       :isosceles
     elsif @side_2 == @side_1 && @side_3
       :equilateral
-    else 
+    else
       :scalene
-    end 
+    end
   end
   #
   # - The `kind` method should raise a custom error, `TriangleError` if the triangle
