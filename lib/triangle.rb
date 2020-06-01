@@ -1,8 +1,12 @@
 class Triangle
+  attr_accessor :side_1, :side_2, :side_3
   # triangle code
   # - Write a `Triangle` class that accepts three arguments on initialization. Each
   #   argument is a length of one of the three sides of the triangle.
   def initialize(side_1, side_2, side_3)
+    @side_1 = side_1
+    @side_2 = side_2
+    @side_3 = side_3
   end
   # - Give your Triangles an instance method, `kind` that returns, as a symbol, its
   #   type. The valid types are:
