@@ -17,6 +17,13 @@ class Triangle
   #
   # 3.  `:scalene`
   def kind
+    if @side_2 == @side_3 || @side_1 == @side_2 || @side_1 == @side_3
+      :isosceles
+    elsif @side_2 == @side_1 && @side_3
+      :equilateral
+    else 
+      :scalene
+    end 
   end
   #
   # - The `kind` method should raise a custom error, `TriangleError` if the triangle
