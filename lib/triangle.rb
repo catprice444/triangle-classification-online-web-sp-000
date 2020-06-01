@@ -33,7 +33,6 @@ class Triangle
   #   the `Triangle` class, inside the `Triangle` class definition. Like
   #   this:
 
-
   class TriangleError < StandardError
 
   end
